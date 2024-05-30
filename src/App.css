@@ -1,38 +1,122 @@
+body{
+  background: url(todo1.jpg) no-repeat center fixed ;
+  background-size: cover;
+}
 .App {
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 30px 15px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-container {
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-input {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 1rem;
+}
+
+.task-input input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 70%;
+  margin-right: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-input button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4caf50; /* Green */
+  border: none;
   color: white;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.controls {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controls select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  background: #f8f8f8;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-list li.completed .task-text {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.task-list li .task-text {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.task-list li .task-actions {
+  display: flex;
+  align-items: center;
+}
+
+.task-list li button {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  margin-left: 0.25rem; /* Adjusted spacing */
+}
+
+.task-list li .edit-button {
+  background-color: #2196F3; /* Blue for Edit button */
+}
+
+.task-list li .remove-button {
+  background-color: #f44336; /* Red for Remove button */
+}
+
+.task-list li .save-button {
+  background-color: #d48f4e; /* Red for Save button */
+}
+
+.task-list li input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+.task-list li input[type="text"] {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
 }
