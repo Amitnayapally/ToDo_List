@@ -1,10 +1,9 @@
 # To See This Project Output Click On The Below Link :- [https://amitnayapally.github.io/ToDo_List/](https://amitnayapally.github.io/ToDo_List/)
 
-###Getting Started with Create React App
+### Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ### Available Scripts
 In the project directory, you can run:
-
 ### `npm start`
 
 Runs the app in the development mode.\
